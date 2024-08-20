@@ -78,7 +78,7 @@ def main():
 			#if position within valid display range
 			if 0 <= x < width  and 0 <= y < height:
 				#adjust color based on magnitude small 0-10 range
-				color = int(255 * (1.0 - (magnitude / 10 ))) % 255
+				color = int(255 * (1.0 - (magnitude / 10 ))) % 255 #mod 255 to keep valid color value
 			#adjust size based on magnitude:
 			size = max(1, int(5 - magnitude))
 
