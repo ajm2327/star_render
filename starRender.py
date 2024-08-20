@@ -71,7 +71,7 @@ def main():
 			#rotate the field
 			rotated = position.rotate_x(rotation_x).rotate_y(rotation_y)
 			#perspective projection
-			scale = 200 / (4 - rotated.z)
+			scale = 2000 / (4 - rotated.z) #adjust scale for zoom / viewpoint
 			x = rotated.x * scale + width / 2
 			y = -rotated.y * scale + height / 2
 			
